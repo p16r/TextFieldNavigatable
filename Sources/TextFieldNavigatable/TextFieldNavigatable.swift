@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol TextFieldNavigatable: UIViewController {
+public protocol TextFieldNavigatable: UIViewController {
 
     func addToolbar(
         to textFields: UITextField?...,
@@ -17,7 +17,7 @@ protocol TextFieldNavigatable: UIViewController {
 
 }
 
-extension TextFieldNavigatable {
+public extension TextFieldNavigatable {
 
     ///
     /// Adds a toolbar with next and previous button to a provided ordered list of text fields.
