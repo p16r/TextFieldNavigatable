@@ -12,7 +12,9 @@ public protocol TextFieldNavigatable: UIViewController {
     func addToolbar(
         to textFields: UITextField?...,
         isNavigatable: Bool,
-        isDismissable: Bool
+        isDismissable: Bool,
+        nextButtonText: String,
+        previousButtonText: String
     )
 
 }
