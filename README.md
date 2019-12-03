@@ -8,7 +8,7 @@ keyboard with Previous, Next, and Done buttons.
 Simply make your `UIViewController` subclass conform to 
 `TextFieldNavigatable` like so:
 
-```
+```swift
 
 class ViewController: UIViewController {
 	⋮
@@ -16,6 +16,13 @@ class ViewController: UIViewController {
 
 extension ViewController: TextFieldNavigatable {}
 
+```
+
+Then wherever you want to add navigation to your text fields, call the
+following function:
+
+```swift
+addToolbar(to: textField1, textField2, textField3 /*, and so on…*/)
 ```
 
 ## The Protocol
@@ -49,7 +56,7 @@ focus to the next or previous text field in the argument list.
 system currently supported by this project. Add the following as a 
 dependency to your Package.swift:
 
-```
+```swift
 
 dependencies: [
     .package(
